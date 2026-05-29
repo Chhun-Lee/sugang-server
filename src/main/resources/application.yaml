@@ -13,9 +13,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-  flyway:
-    enabled: true
-    locations: classpath:db/migration
   data:
     redis:
       host: ${REDIS_HOST:localhost}

@@ -12,7 +12,6 @@ Spring Boot와 MySQL을 기반으로 수강신청 피크 트래픽에서 발생�
 - Spring Data JPA
 - MySQL
 - Redis
-- Flyway
 - Spring Boot Actuator
 - Micrometer Prometheus Registry
 - springdoc-openapi Swagger UI
@@ -97,7 +96,7 @@ $env:REDIS_HOST = "localhost"
 $env:REDIS_PORT = "6379"
 ```
 
-MySQL에는 `course_lock_lab` 데이터베이스가 필요합니다. 스키마는 Flyway가 `src/main/resources/db/migration/V1__init_schema.sql`을 통해 생성합니다.
+MySQL에는 `course_lock_lab` 데이터베이스와 애플리케이션 엔티티에 맞는 테이블이 미리 생성되어 있어야 합니다.
 
 ## 애플리케이션 실행
 
